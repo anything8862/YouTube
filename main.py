@@ -395,7 +395,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"@captain_king_09"
+    credit = f"@DOCTOR_JB"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -538,8 +538,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} {res} @DOCTOR_JB .mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━✦𝒩𝐸𝐸𝒯 𝐵𝒜𝐵𝒜✦━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} @DOCTOR_JB .pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━✦𝒩𝐸𝐸𝒯 𝐵𝒜𝐵𝒜✦━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} {res} @JB_OFFICIAL2210 .mkv\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ {CR}\n\n**━━━━━━━━✦𝗝💙𝗕✦━━━━━━━━**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} @JB_OFFICIAL2210 .pdf\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ {CR}\n\n**━━━━━━━━✦𝗝💙𝗕✦━━━━━━━━**'
                     
                 
                 if "drive" in url:
@@ -566,7 +566,7 @@ async def txt_handler(bot: Client, m: Message):
         # Send a GET request to download the PDF
                         response = scraper.get(url)
 
-        # Check if the response status is OK
+        # Check if the response status is OKAY
                         if response.status_code == 200:
             # Write the PDF content to a file
                             with open(f'{name}.pdf', 'wb') as file:
