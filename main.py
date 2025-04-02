@@ -304,8 +304,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} @JB_OFFICIAL2210.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}\n\n**━━━━━━━━✦𝗝💙𝗕✦━━━━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📄 Title: {name1}  @JB_OFFICIAL2210 .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}\n\n**━━━━━━━━✦𝗝💙𝗕✦━━━━━━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} @JB_OFFICIAL2210.mkv\n\n<pre><code>📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}</code></pre>\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}\n\n**━━━━━━━━✦𝗝💙𝗕✦━━━━━━━━**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📄 Title: {name1}  @JB_OFFICIAL2210 .pdf\n\n<pre><code>📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}</code></pre>\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}\n\n**━━━━━━━━✦𝗝💙𝗕✦━━━━━━━━**'
                     
                 
                 if "drive" in url:
@@ -332,7 +332,7 @@ async def txt_handler(bot: Client, m: Message):
         # Send a GET request to download the PDF
                         response = scraper.get(url)
 
-        # Check if the response status is OK
+        # Check if the response status is OKAY 
                         if response.status_code == 200:
             # Write the PDF content to a file
                             with open(f'{name}.pdf', 'wb') as file:
@@ -388,7 +388,7 @@ async def txt_handler(bot: Client, m: Message):
 
 # Advance
 
-@bot.on_message(filters.command(["jb1"]) )
+@bot.on_message(filters.command(["team1"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
